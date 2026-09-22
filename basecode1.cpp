@@ -28,7 +28,7 @@ unsigned long lastTimeArm2 = 0;
 unsigned long lastTimeArm3 = 0;
 
 // The cooldown time in milliseconds (200ms is usually perfect for physical objects)
-const unsigned long DEBOUNCE_DELAY = 200; 
+const unsigned long DEBOUNCE_DELAY = 500; 
 
 // Updated function with non-blocking timer
 void handleArmStateMachine(int &currentState, unsigned long &lastChangeTime, int pinBackstage, int pinStage, int comPin1, int comPin2) {
